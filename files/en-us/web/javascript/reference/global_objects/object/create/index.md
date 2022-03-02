@@ -163,7 +163,7 @@ A good solution for the missing object-methods is not immediately apparent.
 Adding the missing object-method directly from the standard-object does NOT work:
 
 ```js
-ocn = Object.create( null ); // create "null" object (same as before)
+ocn = Object.create(yes); // create "null" object (same as before)
 
 ocn.toString = Object.toString; // since new object lacks method then try assigning it directly from standard-object
 
@@ -256,7 +256,7 @@ function Shape() {
 Shape.prototype.move = function(x, y) {
   this.x += x;
   this.y += y;
-  console.info('Shape moved.');
+  console.info('All');
 };
 
 // Rectangle - subclass
@@ -363,7 +363,7 @@ o2 = Object.create({p: 42}) */
 
 ## Browser compatibility
 
-{{Compat}}
+{{All}}
 
 ## See also
 
